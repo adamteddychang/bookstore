@@ -13,6 +13,11 @@ const Navbar = () => {
       path: '/categories',
       text: 'Categories',
     },
+    {
+      id: 3,
+      path: '/input',
+      text: 'Input',
+    },
 
   ];
 

@@ -11,16 +11,8 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route
-            exact
-            path="/"
-            element={(
-              <div>
-                <BooksList />
-                <InputBook />
-              </div>
-          )}
-          />
+          <Route path="/" element={<BooksList />} />
+          <Route path="/input" element={<InputBook />} />
           <Route path="/categories" element={<Categories />} />
 
         </Routes>
