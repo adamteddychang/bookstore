@@ -9,10 +9,9 @@ const Book = ({ id, title, author }) => (
   </li>
 );
 
-Book.propTypes = {
-  id: PropTypes.number,
-  title: PropTypes.string,
-  author: PropTypes.string,
+Book.propTypes = {  
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };
 
 export default Book;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Book from './Book';
+
 const { v4: uuidv4 } = require('uuid');
 
 const BooksList = () => {
@@ -17,11 +18,12 @@ const BooksList = () => {
     {
       id: uuidv4(),
       title: 'Harry Potter',
-      author: 'J.K. Rowling',
+      author: `J.K. Rowling${uuidv4()}`,
     },
   ];
 
   return (
+    
     <ul>
       {books.map((book) => (
         <Book
@@ -31,6 +33,7 @@ const BooksList = () => {
         />
       ))}
     </ul>
+    
   );
 };
 

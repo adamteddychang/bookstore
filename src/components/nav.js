@@ -30,7 +30,7 @@ const Navbar = () => {
             <li key={link.id}>
               <NavLink
                 to={link.path}
-                
+
               >
                 {link.text}
               </NavLink>
