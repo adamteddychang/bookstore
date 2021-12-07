@@ -18,22 +18,23 @@ const BooksList = () => {
     {
       id: uuidv4(),
       title: 'Harry Potter',
-      author: `J.K. Rowling${uuidv4()}`,
+      author: 'J.K. Rowling',
     },
   ];
 
   return (
-    
+
     <ul>
       {books.map((book) => (
         <Book
+          id={book.id}
           key={book.id}
           title={book.title}
           author={book.author}
         />
       ))}
     </ul>
-    
+
   );
 };
 
