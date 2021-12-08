@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({title, author,deleteBook }) => (
+const Book = ({ title, author, deleteBook }) => (
   <li>
     <p>{title}</p>
     <p>{author}</p>
@@ -9,7 +9,7 @@ const Book = ({title, author,deleteBook }) => (
   </li>
 );
 
-Book.propTypes = {  
+Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   deleteBook: PropTypes.func.isRequired,

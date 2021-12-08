@@ -16,7 +16,10 @@ const InputBook = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.addBook(inputBook);
+    // props.addBook(inputBook);
+    const { addBook } = props;
+
+    addBook(inputBook);
     setInputBook({
       title: '',
       author: '',

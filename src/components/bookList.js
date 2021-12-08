@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import Book from './Book';
 import { useDispatch } from 'react-redux';
+import Book from './Book';
 import { addBook, removeBook } from '../redux/books/books';
 import store from '../redux/configureStore';
 import InputBook from './inputBook';
-
 
 const { v4: uuidv4 } = require('uuid');
 
@@ -14,7 +13,7 @@ const BooksList = () => {
 
   const submitBookToStore = ({ title, author }) => {
     const newBook = {
-      id:uuidv4(),
+      id: uuidv4(),
       title,
       author,
     };
@@ -34,20 +33,19 @@ const BooksList = () => {
 
   return (
     <div>
-    <ul>
-      {books.map((book) => (
-        <Book
-          key={book.id}
-          title={book.title}
-          author={book.author}
-          deleteBook={() => deleteBook(book)}
-        />
-      ))}
-    </ul>
+      <ul>
+        {books.map((book) => (
+          <Book
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            deleteBook={() => deleteBook(book)}
+          />
+        ))}
+      </ul>
 
-    <InputBook addBook={submitBookToStore} />
-  </div>
-    
+      <InputBook addBook={submitBookToStore} />
+    </div>
 
   );
 };
