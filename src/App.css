@@ -10,8 +10,8 @@ h1 {
 
 .navbar ul {
   display: flex;
-list-style-type: none;  
-margin-right: 2rem;
+  list-style-type: none;
+  margin-right: 2rem;
 }
 
 .navbar li {
