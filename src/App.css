@@ -1,11 +1,31 @@
-h1 {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background: #fafafa;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   padding: 0 5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  height: 6rem;
+}
+
+.navbar h1 a {
+  text-decoration: none;
+  color: #0290ff;
+  font-size: 1.875rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .navbar ul {
@@ -16,6 +36,31 @@ h1 {
 
 .navbar li {
   margin-right: 5rem;
+}
+
+.navbar li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #121212;
+  font-size: 0.8rem;
+  letter-spacing: 1.9px;
+}
+
+.circle {
+  border: 1px solid #e8e8e8;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user {
+  margin: 0 auto;
+  color: #0290ff;
+  font-size: 20px;
 }
 
 .main {
