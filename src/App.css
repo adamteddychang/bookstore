@@ -69,8 +69,10 @@ body {
 
 .bookContain {
   background-color: #fff;
-  padding: 2rem 5rem;
+  padding: 2rem 1.6rem;
   margin: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .category {
@@ -110,11 +112,34 @@ body {
   border: none;
   background: #fff;
   border-right: solid 1px #e8e8e8;
-  font-family: RobotoSlab;
+  font-family: 'RobotoSlab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
   padding: 0 1rem;
+}
+.progwithtxt {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+  padding: 0 5rem;
+}
+.progress {
+ height: 4rem;
+ width: 4rem;
+ margin-right: 2rem;
+}
+
+.percentage {
+  font-family: Montserrat;
+  font-size: 2rem;
+  color: #121212;
+  margin: 0;
+  font-weight: normal;
+}
+
+.progressTXT p {
+  margin:0;
 }
 
 .infoBtns:first-child {
