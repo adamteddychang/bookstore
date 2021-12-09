@@ -11,13 +11,18 @@ const Book = ({ book }) => {
 
   return (
 
-    <div key={book.item_id}>
-      <p>{book.category}</p>
-      <p>{book.title}</p>
-      
-      <button type="submit" onClick={() => { deleteBook(book); }}>Remove</button>
+    <div className="bookContain" key={book.item_id}>
+      <div className="bookInfo">
+        <p className="category">{book.category}</p>
+        <h3 className="bookName">{book.title}</h3>
+        <p className="author">The Author</p>
+        <div className="btns">
+          <button type="submit" className="infoBtns">Comment</button>
+          <button type="submit" className="infoBtns" onClick={() => { deleteBook(book); }}>Remove</button>
+          <button type="submit" className="infoBtns">Edit</button>
+        </div>
+      </div>
     </div>
-
   );
 };
 
