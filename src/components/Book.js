@@ -12,8 +12,9 @@ const Book = ({ book }) => {
   return (
 
     <div key={book.item_id}>
-      <p>{book.title}</p>
       <p>{book.category}</p>
+      <p>{book.title}</p>
+      
       <button type="submit" onClick={() => { deleteBook(book); }}>Remove</button>
     </div>
 
