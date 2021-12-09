@@ -8,10 +8,7 @@ const Book = ({ book }) => {
   const deleteBook = (id) => {
     dispatch(removeBook(id));
   };
-  const reload = async () => {
-    await deleteBook();
-    window.location.reload();
-  };
+  
 
   return (
 
