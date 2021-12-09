@@ -8,7 +8,6 @@ const Book = ({ book }) => {
   const deleteBook = (id) => {
     dispatch(removeBook(id));
   };
-  
 
   return (
 
