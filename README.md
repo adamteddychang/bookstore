@@ -2,8 +2,9 @@
 
 # Book_Store
 
-> In this project, we  will create a Bookstore application with Javascript, React, and Redux.
+> In this project, I  will create a Bookstore application with Javascript, React, and Redux.
 
+![image](https://user-images.githubusercontent.com/63560332/145591706-e48882e7-a4df-4967-a4b9-2a91b980161a.png)
 
 
 ## Built With
