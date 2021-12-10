@@ -41,6 +41,7 @@ const InputBook = () => {
           <option className="otherops" value="Drama">Drama</option>
           <option className="otherops" value="Science Fiction">Science Fiction</option>
           <option className="otherops" value="Horror">Horror</option>
+          <option className="otherops" value="Fantasy">Fantasy</option>
         </select>
         <button type="submit">ADD BOOK</button>
       </form>
