@@ -22,14 +22,14 @@ const getBooks = async () => {
   return books;
 };
 
-const deleteBook = async (bookId) => {
-  const result = await fetch(`${apiUrl}/${bookId}`, {
+const deleteBook = async (book) => {
+  const result = await fetch(`${apiUrl}/${book.item_id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      item_id: bookId,
+      item_id: book.item_id,
     }),
   });
 
